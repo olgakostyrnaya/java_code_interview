@@ -98,6 +98,7 @@ public class StringCompressor {
         int counter = 0;
         int readPos = 0;
         while (readPos < chars.length) {
+            counter = 0;
             element = chars[readPos];
             while (counter < chars.length && readPos < chars.length && element == chars[readPos]) {
                 readPos++;
@@ -111,7 +112,6 @@ public class StringCompressor {
                     chars[writePos++] = c;
                 }
             }
-            counter = 0;
         }
 
         return writePos;
