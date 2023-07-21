@@ -10,7 +10,6 @@ public class StringCompressor {
             return 0;
         }
 
-        System.out.println("origin length: " + chars.length);
         char element;
         int writePos = 0;
         int counter = 0;
@@ -32,8 +31,6 @@ public class StringCompressor {
             counter = 0;
 
         }
-        System.out.println("compressed chars: " + Arrays.toString(chars));
-        System.out.println("result: " + writePos);
 
         return writePos;
     }
