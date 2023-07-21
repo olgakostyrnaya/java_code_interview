@@ -114,7 +114,6 @@ public class StringCompressor {
                 }
             }
             counter = 0;
-
         }
         System.out.println("compressed chars: " + Arrays.toString(chars));
         System.out.println("result: " + writePos);
