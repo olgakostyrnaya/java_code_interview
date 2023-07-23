@@ -7,18 +7,17 @@ public class SummaryRanger {
         if (nums == null) {
             return null;
         }
+        ArrayList<String> result = new ArrayList<>();
         if (nums.length < 1) {
-            return new ArrayList<String>();
+            return result;
         }
 
         if (nums.length == 1) {
-            List<String> result = new ArrayList<String>();
             result.add(String.valueOf(nums[0]));
 
             return result;
         }
 
-        List<String> result = new ArrayList<String>();
         int leftIndex = 0;
         int rightIndex = 1;
         int cur = 0;
