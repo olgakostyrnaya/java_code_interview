@@ -4,7 +4,7 @@
 
 ## reverse-linked-list
 
-https://leetcode.com/problems/reverse-linked-lists/
+https://leetcode.com/problems/reverse-linked-list/
 
 ## Размышления
     
