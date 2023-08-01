@@ -1,9 +1,7 @@
-package com.company.leetcode.mergetwosortedlist;
-
 public class ListNodeMerger {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode result = new ListNode(-1);
-        ListNode cur = result;
+        ListNode preHead = new ListNode(-1);
+        ListNode cur = preHead;
 
         while (list1 != null && list2 != null) {
             if (list1.val < list2.val) {
@@ -17,6 +15,6 @@ public class ListNodeMerger {
         }
         cur.next = list1 == null ? list2 : list1;
 
-        return result.next;
+        return preHead.next;
     }
 }

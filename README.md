@@ -13,7 +13,7 @@ https://leetcode.com/problems/summary-ranges/ DONE (неоптимальное �
 https://leetcode.com/problems/two-sum/ DONE
 
 
-https://leetcode.com/problems/merge-two-sorted-lists/ done, без тестов и доки
+https://leetcode.com/problems/merge-two-sorted-lists/ done
 
 https://leetcode.com/problems/squares-of-a-sorted-array DONE (неоптимальное решение)
 
