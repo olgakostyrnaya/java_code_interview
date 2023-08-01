@@ -19,6 +19,6 @@ https://leetcode.com/problems/squares-of-a-sorted-array DONE (неоптимал
 
 https://leetcode.com/problems/add-two-numbers/ DONE (оптимальное решение, но не самое элегантное)
 
-https://leetcode.com/problems/reverse-linked-list/ DONE (без тестов и доки, не элегантно) 
+https://leetcode.com/problems/reverse-linked-list/ DONE 
 
 https://leetcode.com/problems/insert-delete-getrandom-o1
