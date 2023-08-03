@@ -21,4 +21,4 @@ https://leetcode.com/problems/add-two-numbers/ DONE (оптимальное ре
 
 https://leetcode.com/problems/reverse-linked-list/ DONE (неоптимальное решение)
 
-https://leetcode.com/problems/insert-delete-getrandom-o1
+https://leetcode.com/problems/insert-delete-getrandom-o1 - DONE (не оч оптимальное решение, без тестов, соблюдена О(1)?)
