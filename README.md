@@ -23,7 +23,7 @@ https://leetcode.com/problems/reverse-linked-list/ DONE (неоптимальн�
 
 https://leetcode.com/problems/insert-delete-getrandom-o1 - DONE (не оч оптимальное решение, без тестов, соблюдена О(1)?)
 
-https://leetcode.com/problems/valid-parentheses/  - new 
+https://leetcode.com/problems/valid-parentheses/  - done
 
 https://leetcode.com/problems/group-anagrams/ - new
 
