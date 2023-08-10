@@ -25,10 +25,10 @@ https://leetcode.com/problems/insert-delete-getrandom-o1 - DONE (не оч оп�
 
 https://leetcode.com/problems/valid-parentheses/  - done
 
-https://leetcode.com/problems/group-anagrams/ - new
+https://leetcode.com/problems/group-anagrams/ - done but wrong))
 
 https://leetcode.com/problems/maximum-product-of-three-numbers/ - new
 
 https://leetcode.com/problems/maximum-average-subarray-i/ - new
 
-https://leetcode.com/problems/subarray-sum-equals-k/ - new
+https://leetcode.com/problems/subarray-sum-equals-k/ - new`
