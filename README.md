@@ -25,7 +25,7 @@ https://leetcode.com/problems/insert-delete-getrandom-o1 - DONE (не оч оп�
 
 https://leetcode.com/problems/valid-parentheses/  - done
 
-https://leetcode.com/problems/group-anagrams/ - done but wrong))
+https://leetcode.com/problems/group-anagrams/ - done, but first straightforward solution has error
 
 https://leetcode.com/problems/maximum-product-of-three-numbers/ - new
 

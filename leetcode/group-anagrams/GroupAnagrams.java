@@ -1,11 +1,34 @@
-//hashmap где переопределили compare?
+import java.util.*;
 
-// у нас есть массив стрингов
-// нужно вернуть массив массивов
-// если сумма по ascii = то add
+class GroupAnagrams {
 
-class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
+        Map<String, List<String>> tempMap = new HashMap<>();
+        for (String word : strs) {
+            char[] temp = word.toCharArray();
+            Arrays.sort(temp);
+            String sortedWord = new String(temp);
+            List<String> similar = new ArrayList<>();
+            if (tempMap.containsKey(sortedWord)) {
+                similar = tempMap.get(sortedWord);
+                similar.add(word);
+            } else {
+                similar.add(word);
+                tempMap.put(sortedWord, similar);
+            }
+        }
+
+        List<List<String>> result = new ArrayList<>();
+
+        for (String sortedWord : tempMap.keySet()) {
+            result.add(tempMap.get(sortedWord));
+        }
+
+        return result;
+    }
+
+
+    public List<List<String>> groupAnagramsWrong(String[] strs) {
         Map<Integer, List<String>> tempMap = new HashMap<Integer, List<String>>();
 
 
