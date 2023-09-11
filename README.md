@@ -27,7 +27,7 @@ https://leetcode.com/problems/valid-parentheses/  - done
 
 https://leetcode.com/problems/group-anagrams/ - done, but first straightforward solution has error
 
-https://leetcode.com/problems/maximum-product-of-three-numbers/ - new
+https://leetcode.com/problems/maximum-product-of-three-numbers/ - done
 
 https://leetcode.com/problems/maximum-average-subarray-i/ - new
 
