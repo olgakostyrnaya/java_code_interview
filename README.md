@@ -29,6 +29,6 @@ https://leetcode.com/problems/group-anagrams/ - done, but first straightforward 
 
 https://leetcode.com/problems/maximum-product-of-three-numbers/ - done
 
-https://leetcode.com/problems/maximum-average-subarray-i/ - non optimal, without docs and tests
+https://leetcode.com/problems/maximum-average-subarray-i/ - DONE (неоптимальное решение)
 
 https://leetcode.com/problems/subarray-sum-equals-k/ - new`
