@@ -10,10 +10,18 @@ https://leetcode.com/problems/maximum-average-subarray-i/
     Straightforward solution: идти по массиву, складывать по k элементов, если сумма больше предыщущей, 
     то обновляем максимальное значение суммы.
     Максимальное значение суммы приводим к double и делим на k.
+
+    Optimal solution: "sliding window": можем избавится от внутреннего цикла внутри straightforward решения, 
+    если не будем подсчитывать сумму каждый раз отдельно для k элементов, а будем сдвигать окошко суммирования.
+    Чтобы получить сумму элементов следующего окна - нужно вычесть самый левый элемент от начала окна и прибавить самый правый.
     
 
 ## Сomplexity
+    Straightforward solution: 
     Time Complexity: O(N*K)
+    Memory Complexity: O(1), т.к. при увеличении массива доп память не потребуется
+    Optimal solution: 
+    Time Complexity: O(N), т.к. нет внутреннего цикла, проходимся 1 раз по исходному массиву.
     Memory Complexity: O(1), т.к. при увеличении массива доп память не потребуется
 
 <details><summary>Test Cases</summary><blockquote>
@@ -24,25 +32,21 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MaximumProductTest {
+public class MaxAverageSubarrayTest {
 
-    private MaximumProduct maximumProduct;
+    private MaxAverageSubarray maxAverageSubarray;
 
     @BeforeEach
     void setUp() {
-        maximumProduct = new MaximumProduct();
+        maxAverageSubarray = new MaxAverageSubarray();
     }
 
     @Test
-    void ifOnlyPositiveNumbersReturnProductsOfMaxs() {
-        int[] nums = {2, 15, 3, 1, 4, 20};
-        assertEquals(maximumProduct.maximumProduct(nums), 20*15*4);
-    }
-
-    @Test
-    void ifNegativeNumbersAbsMoreThan2MaxValuesReturnProductsOfMins() {
-        int[] nums = {-42, -15, 3, 1, 4, 20, 10};
-        assertEquals(maximumProduct.maximumProduct(nums), -42*-15*20);
+    void test() {
+        int[] nums = {1,12,-5,-6,50,3};
+        int k = 4;
+        double expected = (double) (12 - 5 - 6 + 50)/ k;
+        assertEquals(expected, maxAverageSubarray.findMaxAverage(nums, k));
     }
 }
 ```
@@ -50,38 +54,42 @@ public class MaximumProductTest {
 </blockquote></details>
 
 ``` java
-import java.util.*;
+ public static double findMaxAverage(int[] nums, int k) {
+        int max = Integer.MIN_VALUE;
+        int left = 0;
+        int sum = 0;
 
-class MaximumProduct {
-
-    public int maximumProduct(int[] nums) {
-        int min1 = Integer.MAX_VALUE;
-        int min2 = Integer.MAX_VALUE;
-        int max1 = Integer.MIN_VALUE;
-        int max2 = Integer.MIN_VALUE;
-        int max3 = Integer.MIN_VALUE;
-
-        for (int n : nums) {
-            if (n < min1) {
-                min2 = min1;
-                min1 = n;
-            } else if (n < min2) {
-                min2 = n;
-            }
-            if (n > max1) {
-                max3 = max2;
-                max2 = max1;
-                max1 = n;
-            } else if (n > max2) {
-                max3 = max2;
-                max2 = n;
-            } else if (n > max3) {
-                max3 = n;
+        for (int right  = 0; right < nums.length; right++) {
+            sum += nums[right];
+            if (right >= k-1) {
+                max = Math.max(max, sum);
+                sum -= nums[left];
+                left++;
             }
         }
 
-        return Math.max(max1 * max2 * max3, min1 * min2 * max1);
+        return (double) max/k;
     }
-}
-}
+
+    public double findMaxAverageNonOptimal(int[] nums, int k) {
+        int max = Integer.MIN_VALUE;
+        int currentIndex = 0;
+        int firstIndex = 0;
+        int lastIndex = k;
+        int sum;
+
+        while (lastIndex <= nums.length) {
+            sum = 0;
+            while (currentIndex<lastIndex) {
+                sum = sum + nums[currentIndex++];
+            }
+            if (sum > max) {
+                max = sum;
+            }
+            lastIndex++;
+            currentIndex = ++firstIndex;
+        }
+
+        return (double) max/k;
+    }
 ```

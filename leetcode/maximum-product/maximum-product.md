@@ -47,7 +47,8 @@ public class MaximumProductTest {
     @Test
     void ifNegativeNumbersAbsMoreThan2MaxValuesReturnProductsOfMins() {
         int[] nums = {-42, -15, 3, 1, 4, 20, 10};
-        assertEquals(maximumProduct.maximumProduct(nums), -42*-15*20);
+        int expected = -42 * -15 * 20;
+        assertEquals(expected, maximumProduct.maximumProduct(nums) );
     }
 }
 ```

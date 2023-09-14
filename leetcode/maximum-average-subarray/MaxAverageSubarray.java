@@ -1,5 +1,23 @@
 
 class MaxAverageSubarray {
+
+    public double findMaxAverage(int[] nums, int k) {
+        int max = Integer.MIN_VALUE;
+        int left = 0;
+        int sum = 0;
+
+        for (int right  = 0; right < nums.length; right++) {
+            sum += nums[right];
+            if (right >= k-1) {
+                max = Math.max(max, sum);
+                sum -= nums[left];
+                left++;
+            }
+        }
+
+        return (double) max/k;
+    }
+
     public double findMaxAverageNonOptimal(int[] nums, int k) {
         int max = Integer.MIN_VALUE;
         int currentIndex = 0;
@@ -19,6 +37,6 @@ class MaxAverageSubarray {
             currentIndex = ++firstIndex;
         }
 
-        return new Double (max)/k;
+        return (double) max/k;
     }
 }
