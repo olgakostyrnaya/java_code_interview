@@ -23,11 +23,11 @@ https://leetcode.com/problems/reverse-linked-list/ DONE (неоптимальн�
 
 https://leetcode.com/problems/insert-delete-getrandom-o1 - DONE (не оч оптимальное решение, без тестов, соблюдена О(1)?)
 
-https://leetcode.com/problems/valid-parentheses/  - done
+https://leetcode.com/problems/valid-parentheses/  - DONE
 
-https://leetcode.com/problems/group-anagrams/ - done, but first straightforward solution has error
+https://leetcode.com/problems/group-anagrams/ - DONE, but first straightforward solution has error
 
-https://leetcode.com/problems/maximum-product-of-three-numbers/ - done
+https://leetcode.com/problems/maximum-product-of-three-numbers/ - DONE
 
 https://leetcode.com/problems/maximum-average-subarray-i/ - DONE (неоптимальное решение)
 
