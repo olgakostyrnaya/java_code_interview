@@ -32,13 +32,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MaxAverageSubarrayTest {
+public class SubarraySumKTest {
 
-    private MaxAverageSubarray maxAverageSubarray;
+    private SubarraySumK maxAverageSubarray;
 
     @BeforeEach
     void setUp() {
-        maxAverageSubarray = new MaxAverageSubarray();
+        maxAverageSubarray = new SubarraySumK();
     }
 
     @Test

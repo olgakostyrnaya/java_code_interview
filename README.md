@@ -31,4 +31,4 @@ https://leetcode.com/problems/maximum-product-of-three-numbers/ - DONE
 
 https://leetcode.com/problems/maximum-average-subarray-i/ - DONE (неоптимальное решение)
 
-https://leetcode.com/problems/subarray-sum-equals-k/ - new`
+https://leetcode.com/problems/subarray-sum-equals-k/ - готовое решение (draft)
