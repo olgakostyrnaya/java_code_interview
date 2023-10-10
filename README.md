@@ -32,3 +32,13 @@ https://leetcode.com/problems/maximum-product-of-three-numbers/ - DONE
 https://leetcode.com/problems/maximum-average-subarray-i/ - DONE (неоптимальное решение)
 
 https://leetcode.com/problems/subarray-sum-equals-k/ - готовое решение (draft)
+
+https://leetcode.com/problems/top-k-frequent-words/ - NEW
+
+https://leetcode.com/problems/intersection-of-two-arrays-ii/ - NEW
+
+https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/ - NEW
+
+https://leetcode.com/problems/valid-palindrome-ii/ - NEW
+
+https://leetcode.com/problems/merge-intervals/ - NEW
