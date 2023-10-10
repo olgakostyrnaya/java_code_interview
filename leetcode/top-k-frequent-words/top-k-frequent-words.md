@@ -5,6 +5,7 @@
 ## top-k-frequent-words
 
 https://leetcode.com/problems/top-k-frequent-words/
+https://leetcode.com/problems/top-k-frequent-words/solutions/3718319/java-hashmap-heap-priorityqueue-beats-99-8/ - elegant solution
 
 ## Размышления
     
