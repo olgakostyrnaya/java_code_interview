@@ -12,19 +12,19 @@ public class SubarraySumKTest {
         subarraySumK = new SubarraySumK();
     }
 
-    //[-4, 5, -2, 17, 1, 0, 3, 12, -17]
-    //k = 15
-    //expected = 4
     @Test
-    void test1() {
-
+    void ifUnsortedAndHaveNegativeNumbers() {
+        int [] nums = {-4, 5, -2, 17, 1, 0, 3, 12, -17};
+        int k = 15;
+        int expected = 4;
+        assertEquals(expected, subarraySumK.subarraySum(nums, k));
     }
 
-    //[0,1,-1,-1,2]
-    //k = 0
-    //expected = 4
     @Test
-    void test2() {
-
+    void ifContainNumberWithDifferentSign() {
+        int [] nums = {0,1,-1,-1,2};
+        int k = 0;
+        int expected = 4;
+        assertEquals(expected, subarraySumK.subarraySum(nums, k));
     }
 }
