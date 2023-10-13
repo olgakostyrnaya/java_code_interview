@@ -33,7 +33,7 @@ https://leetcode.com/problems/maximum-average-subarray-i/ - DONE (неоптим
 
 https://leetcode.com/problems/subarray-sum-equals-k/ - готовое решение (draft)
 
-https://leetcode.com/problems/top-k-frequent-words/ - DRAFT. PriorityQueue?
+https://leetcode.com/problems/top-k-frequent-words/ - DONE. But could not explain the time complexity 
 
 https://leetcode.com/problems/intersection-of-two-arrays-ii/ - NEW
 
